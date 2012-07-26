@@ -19,6 +19,7 @@
 		2C2BF47F15C170790052469C /* TCTimeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF47E15C170790052469C /* TCTimeSelectionViewController.m */; };
 		2C2BF48315C171990052469C /* TCTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF48215C171990052469C /* TCTimeManager.m */; };
 		2CAD05F115C17B2C003E122F /* TCPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD05F015C17B2C003E122F /* TCPieChartViewController.m */; };
+		2CAD060F15C185AC003E122F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2CAD060E15C185AC003E122F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		2C2BF48215C171990052469C /* TCTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTimeManager.m; sourceTree = "<group>"; };
 		2CAD05EF15C17B2C003E122F /* TCPieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPieChartViewController.h; sourceTree = "<group>"; };
 		2CAD05F015C17B2C003E122F /* TCPieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPieChartViewController.m; sourceTree = "<group>"; };
+		2CAD060E15C185AC003E122F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2C2BF48215C171990052469C /* TCTimeManager.m */,
 				2C2BF47015C150590052469C /* Pie View */,
 				2C2BF45215C14EAD0052469C /* Supporting Files */,
+				2CAD060E15C185AC003E122F /* README.md */,
 			);
 			path = Timecard;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				2C2BF45615C14EAD0052469C /* InfoPlist.strings in Resources */,
 				2C2BF45F15C14EAD0052469C /* MainStoryboard.storyboard in Resources */,
+				2CAD060F15C185AC003E122F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
