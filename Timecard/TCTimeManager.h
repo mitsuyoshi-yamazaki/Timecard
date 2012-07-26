@@ -23,5 +23,6 @@
 - (void)reset;
 
 - (NSArray *)timeRanges;
+- (void)store;
 
 @end

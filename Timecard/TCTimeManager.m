@@ -8,6 +8,8 @@
 
 #import "TCTimeManager.h"
 
+#define kTCTimeManagerKey @"TCTimeManagerKey"
+
 @implementation TCTimeManager
 
 static id _instance = nil;
@@ -31,6 +33,13 @@ static BOOL _willDelete = NO;
 	
 	if (self) {
 		_ranges = [[NSMutableArray alloc] initWithCapacity:0];
+
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		NSArray *storedArray = [defaults objectForKey:kTCTimeManagerKey];
+		
+		if (storedArray.count) {
+			[_ranges addObjectsFromArray:storedArray];
+		}
 	}
 	return self;
 }
@@ -145,5 +154,13 @@ static BOOL _willDelete = NO;
 - (NSArray *)timeRanges {
 	return [NSArray arrayWithArray:_ranges];
 }
+
+- (void)store {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
+	[defaults setObject:_ranges forKey:kTCTimeManagerKey];
+	[defaults synchronize];
+}
+
 
 @end
