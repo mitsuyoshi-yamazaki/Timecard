@@ -15,6 +15,7 @@
 		2C2BF45C15C14EAD0052469C /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF45B15C14EAD0052469C /* TCAppDelegate.m */; };
 		2C2BF45F15C14EAD0052469C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2BF45D15C14EAD0052469C /* MainStoryboard.storyboard */; };
 		2C2BF46215C14EAD0052469C /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF46115C14EAD0052469C /* TCViewController.m */; };
+		2C2BF47415C1507C0052469C /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF47315C1507C0052469C /* PieView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		2C2BF44B15C14EAD0052469C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C2BF44D15C14EAD0052469C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C2BF44F15C14EAD0052469C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C2BF45315C14EAD0052469C /* Timecard-Info.plist */ = {isa = PBXFileReference; path = "Timecard-Info.plist"; sourceTree = "<group>"; };
+		2C2BF45315C14EAD0052469C /* Timecard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timecard-Info.plist"; sourceTree = "<group>"; };
 		2C2BF45515C14EAD0052469C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C2BF45715C14EAD0052469C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2C2BF45915C14EAD0052469C /* Timecard-Prefix.pch */ = {isa = PBXFileReference; path = "Timecard-Prefix.pch"; sourceTree = "<group>"; };
-		2C2BF45A15C14EAD0052469C /* TCAppDelegate.h */ = {isa = PBXFileReference; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		2C2BF45915C14EAD0052469C /* Timecard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timecard-Prefix.pch"; sourceTree = "<group>"; };
+		2C2BF45A15C14EAD0052469C /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		2C2BF45B15C14EAD0052469C /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
 		2C2BF45E15C14EAD0052469C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2C2BF46015C14EAD0052469C /* TCViewController.h */ = {isa = PBXFileReference; path = TCViewController.h; sourceTree = "<group>"; };
+		2C2BF46015C14EAD0052469C /* TCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCViewController.h; sourceTree = "<group>"; };
 		2C2BF46115C14EAD0052469C /* TCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
+		2C2BF47215C1507C0052469C /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		2C2BF47315C1507C0052469C /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				2C2BF45D15C14EAD0052469C /* MainStoryboard.storyboard */,
 				2C2BF46015C14EAD0052469C /* TCViewController.h */,
 				2C2BF46115C14EAD0052469C /* TCViewController.m */,
+				2C2BF47015C150590052469C /* Pie View */,
 				2C2BF45215C14EAD0052469C /* Supporting Files */,
 			);
 			path = Timecard;
@@ -96,6 +100,15 @@
 				2C2BF45915C14EAD0052469C /* Timecard-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C2BF47015C150590052469C /* Pie View */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BF47215C1507C0052469C /* PieView.h */,
+				2C2BF47315C1507C0052469C /* PieView.m */,
+			);
+			name = "Pie View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				2C2BF45815C14EAD0052469C /* main.m in Sources */,
 				2C2BF45C15C14EAD0052469C /* TCAppDelegate.m in Sources */,
 				2C2BF46215C14EAD0052469C /* TCViewController.m in Sources */,
+				2C2BF47415C1507C0052469C /* PieView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +287,7 @@
 				2C2BF46715C14EAD0052469C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
