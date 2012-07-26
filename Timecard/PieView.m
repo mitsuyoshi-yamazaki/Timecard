@@ -164,8 +164,8 @@ void drawPattern(void* info, CGContextRef context);
 
 	for (NSValue *value in _ranges) {
 		NSRange range = value.rangeValue;
-		CGFloat beginPoint = (((float)range.location * (M_PI * 2)) / 360.0f);
-		CGFloat endPoint = (((float)(range.location + range.length) * (M_PI * 2)) / 360.0f);
+		CGFloat beginPoint = (((float)range.location * (M_PI * 2)) / (24.0f * 60.0f));
+		CGFloat endPoint = (((float)(range.location + range.length) * (M_PI * 2)) / (24.0f * 60.0f));
 		
 		CGContextSetFillPattern(context, pattern, &alpha);
 		CGContextBeginPath(context);
