@@ -8,6 +8,8 @@
 
 #import "TCViewController.h"
 
+#import "TCTimeManager.h"
+
 @interface TCViewController ()
 - (void)changeStateTo:(TimecardState)newState;
 @end
@@ -51,24 +53,28 @@
 
 - (IBAction)changeState:(id)sender {
 	
+	TCTimeManager *manager = [TCTimeManager defaultManager];
+
 	switch (_currentState) {
 		case TimecardStateWorking:
 			[self changeStateTo:TimecardStateResting];
+			if (sender != self) {
+				[manager endWorking];
+			}
 			break;
 			
 		case TimecardStateResting:	
 		default:
 			[self changeStateTo:TimecardStateWorking];
+			if (sender != self) {
+				[manager beginWorking];
+			}
 			break;
 	}
 }
 
-- (IBAction)alreadyChanged:(id)sender {
-	
-}
-
 - (void)changeStateTo:(TimecardState)newState {
-	
+		
 	switch (newState) {
 		case TimecardStateWorking:
 			[self.stateChangeButton setTitle:@"終業" forState:UIControlStateNormal];
@@ -83,6 +89,17 @@
 	}
 	
 	_currentState = newState;
+}
+
+#pragma mark - UIStoryboardSegue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	
+	if ([segue.identifier isEqualToString:@"toTimeSelectionSegue"]) {
+		TCTimeSelectionViewController *controller = (TCTimeSelectionViewController *)segue.destinationViewController;
+		[controller setState:_currentState];
+		
+		[self changeState:self];
+	}
 }
 
 @end

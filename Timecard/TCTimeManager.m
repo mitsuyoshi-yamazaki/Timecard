@@ -105,10 +105,15 @@ static BOOL _willDelete = NO;
 }
 
 - (void)beganFrom:(NSTimeInterval)interval {
+	
+	NSLog(@"begin");
+	
 	_fromTime = [[NSDate date] timeIntervalSince1970] - interval;
 }
 
 - (void)endFrom:(NSTimeInterval)interval {
+	
+	NSLog(@"end");
 	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
@@ -116,7 +121,6 @@ static BOOL _willDelete = NO;
 	
 	NSString *nowDateStr = [dateFormatter stringFromDate:[NSDate date]];
 	NSDate *nowDate = [dateFormatter dateFromString:nowDateStr];
-	NSLog(@"%@", nowDate);
 	[dateFormatter release];
 	
 	NSTimeInterval period = (([[NSDate date] timeIntervalSince1970] - interval) - _fromTime) / 60.0f;

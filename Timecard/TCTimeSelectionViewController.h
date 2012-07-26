@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TCTimeSelectionViewController : UITableViewController
+typedef enum {
+	TimecardStateResting,
+	TimecardStateWorking,
+}TimecardState;
+
+@interface TCTimeSelectionViewController : UITableViewController {
+	TimecardState _state;
+}
+
+- (void)setState:(TimecardState)state;
 
 @end

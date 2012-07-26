@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-	TimecardStateResting,
-	TimecardStateWorking,
-}TimecardState;
+#import "TCTimeSelectionViewController.h"
 
 @interface TCViewController : UIViewController {
 	TimecardState _currentState;
@@ -23,6 +20,5 @@ typedef enum {
 
 - (IBAction)finished:(id)sender;
 - (IBAction)changeState:(id)sender;
-- (IBAction)alreadyChanged:(id)sender;
 
 @end

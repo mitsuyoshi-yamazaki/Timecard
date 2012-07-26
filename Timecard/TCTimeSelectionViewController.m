@@ -8,12 +8,20 @@
 
 #import "TCTimeSelectionViewController.h"
 
+#import "TCTimeManager.h"
+
 @interface TCTimeSelectionViewController ()
 
 @end
 
 @implementation TCTimeSelectionViewController
 
+#pragma mark - Accessor
+- (void)setState:(TimecardState)state {
+	_state = state;
+}
+
+#pragma mark - Lifecycle
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -52,6 +60,42 @@
 {
 	if (indexPath.row == 0) {
 		return;
+	}
+	
+	NSTimeInterval time = 0.0;
+	
+	switch (indexPath.row) {
+		case 1:
+			time = 15 * 60;
+			break;
+			
+		case 2:
+			time = 30 * 60;
+			break;
+			
+		case 3:
+			time = 1 * 60 * 60;
+			break;
+			
+		case 4:
+			time = 2 * 60 * 60;
+			break;
+			
+		default:
+			break;
+	}
+	
+	TCTimeManager *manager = [TCTimeManager defaultManager];
+	
+	switch (_state) {
+		case TimecardStateWorking:
+			[manager endFrom:time];
+			break;
+			
+		case TimecardStateResting:	
+		default:
+			[manager beganFrom:time];
+			break;
 	}
 	
 	[self dismissModalViewControllerAnimated:YES];
