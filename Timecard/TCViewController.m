@@ -47,10 +47,6 @@
 }
 
 #pragma mark - Behavior
-- (IBAction)finished:(id)sender {
-	_currentState = TimecardStateResting;
-}
-
 - (IBAction)changeState:(id)sender {
 	
 	TCTimeManager *manager = [TCTimeManager defaultManager];
@@ -103,8 +99,7 @@
 		[self changeState:self];
 	}
 	else if ([segue.identifier isEqualToString:@"toPieChartSegue"]) {
-		TCTimeManager *manager = [TCTimeManager defaultManager];
-		[manager endWorking];
+		[self changeState:nil];
 	}
 }
 

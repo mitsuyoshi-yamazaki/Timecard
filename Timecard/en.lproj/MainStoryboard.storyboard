@@ -27,7 +27,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="finished:" destination="2" eventType="touchUpInside" id="vKk-Cx-c9E"/>
                                     <segue destination="T8T-DC-0LV" kind="push" identifier="toPieChartSegue" id="9NQ-Uy-lV1"/>
                                 </connections>
                             </button>
@@ -67,7 +66,6 @@
                     <navigationItem key="navigationItem" title="やすんでる" id="zIE-iY-G0D"/>
                     <connections>
                         <outlet property="alreadyStateChangedButton" destination="NaZ-Ke-kt3" id="Ns0-Z9-zFf"/>
-                        <outlet property="finishButton" destination="Wdr-xc-m25" id="Gqi-QJ-XZs"/>
                         <outlet property="stateChangeButton" destination="0u4-2e-lOm" id="Cbl-Ui-uRK"/>
                     </connections>
                 </viewController>

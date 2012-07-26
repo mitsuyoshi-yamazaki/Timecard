@@ -18,7 +18,6 @@
 @property (nonatomic, retain) IBOutlet UIButton *stateChangeButton;
 @property (nonatomic, retain) IBOutlet UIButton *alreadyStateChangedButton;
 
-- (IBAction)finished:(id)sender;
 - (IBAction)changeState:(id)sender;
 
 @end
