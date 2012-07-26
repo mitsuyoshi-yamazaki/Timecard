@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2BF44C15C14EAD0052469C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2BF44B15C14EAD0052469C /* UIKit.framework */; };
+		2C2BF44E15C14EAD0052469C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2BF44D15C14EAD0052469C /* Foundation.framework */; };
+		2C2BF45015C14EAD0052469C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2BF44F15C14EAD0052469C /* CoreGraphics.framework */; };
+		2C2BF45615C14EAD0052469C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C2BF45415C14EAD0052469C /* InfoPlist.strings */; };
+		2C2BF45815C14EAD0052469C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF45715C14EAD0052469C /* main.m */; };
+		2C2BF45C15C14EAD0052469C /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF45B15C14EAD0052469C /* TCAppDelegate.m */; };
+		2C2BF45F15C14EAD0052469C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2BF45D15C14EAD0052469C /* MainStoryboard.storyboard */; };
+		2C2BF46215C14EAD0052469C /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BF46115C14EAD0052469C /* TCViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C2BF44715C14EAD0052469C /* Timecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2BF44B15C14EAD0052469C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C2BF44D15C14EAD0052469C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C2BF44F15C14EAD0052469C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C2BF45315C14EAD0052469C /* Timecard-Info.plist */ = {isa = PBXFileReference; path = "Timecard-Info.plist"; sourceTree = "<group>"; };
+		2C2BF45515C14EAD0052469C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C2BF45715C14EAD0052469C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C2BF45915C14EAD0052469C /* Timecard-Prefix.pch */ = {isa = PBXFileReference; path = "Timecard-Prefix.pch"; sourceTree = "<group>"; };
+		2C2BF45A15C14EAD0052469C /* TCAppDelegate.h */ = {isa = PBXFileReference; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		2C2BF45B15C14EAD0052469C /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		2C2BF45E15C14EAD0052469C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2C2BF46015C14EAD0052469C /* TCViewController.h */ = {isa = PBXFileReference; path = TCViewController.h; sourceTree = "<group>"; };
+		2C2BF46115C14EAD0052469C /* TCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2BF44415C14EAD0052469C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2BF44C15C14EAD0052469C /* UIKit.framework in Frameworks */,
+				2C2BF44E15C14EAD0052469C /* Foundation.framework in Frameworks */,
+				2C2BF45015C14EAD0052469C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C2BF43C15C14EAD0052469C = {
+			isa = PBXGroup;
+			children = (
+				2C2BF45115C14EAD0052469C /* Timecard */,
+				2C2BF44A15C14EAD0052469C /* Frameworks */,
+				2C2BF44815C14EAD0052469C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C2BF44815C14EAD0052469C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BF44715C14EAD0052469C /* Timecard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C2BF44A15C14EAD0052469C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BF44B15C14EAD0052469C /* UIKit.framework */,
+				2C2BF44D15C14EAD0052469C /* Foundation.framework */,
+				2C2BF44F15C14EAD0052469C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C2BF45115C14EAD0052469C /* Timecard */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BF45A15C14EAD0052469C /* TCAppDelegate.h */,
+				2C2BF45B15C14EAD0052469C /* TCAppDelegate.m */,
+				2C2BF45D15C14EAD0052469C /* MainStoryboard.storyboard */,
+				2C2BF46015C14EAD0052469C /* TCViewController.h */,
+				2C2BF46115C14EAD0052469C /* TCViewController.m */,
+				2C2BF45215C14EAD0052469C /* Supporting Files */,
+			);
+			path = Timecard;
+			sourceTree = "<group>";
+		};
+		2C2BF45215C14EAD0052469C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C2BF45315C14EAD0052469C /* Timecard-Info.plist */,
+				2C2BF45415C14EAD0052469C /* InfoPlist.strings */,
+				2C2BF45715C14EAD0052469C /* main.m */,
+				2C2BF45915C14EAD0052469C /* Timecard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C2BF44615C14EAD0052469C /* Timecard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2BF46515C14EAD0052469C /* Build configuration list for PBXNativeTarget "Timecard" */;
+			buildPhases = (
+				2C2BF44315C14EAD0052469C /* Sources */,
+				2C2BF44415C14EAD0052469C /* Frameworks */,
+				2C2BF44515C14EAD0052469C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timecard;
+			productName = Timecard;
+			productReference = 2C2BF44715C14EAD0052469C /* Timecard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C2BF43E15C14EAD0052469C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2C2BF44115C14EAD0052469C /* Build configuration list for PBXProject "Timecard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C2BF43C15C14EAD0052469C;
+			productRefGroup = 2C2BF44815C14EAD0052469C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C2BF44615C14EAD0052469C /* Timecard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C2BF44515C14EAD0052469C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2BF45615C14EAD0052469C /* InfoPlist.strings in Resources */,
+				2C2BF45F15C14EAD0052469C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C2BF44315C14EAD0052469C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2BF45815C14EAD0052469C /* main.m in Sources */,
+				2C2BF45C15C14EAD0052469C /* TCAppDelegate.m in Sources */,
+				2C2BF46215C14EAD0052469C /* TCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C2BF45415C14EAD0052469C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2BF45515C14EAD0052469C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C2BF45D15C14EAD0052469C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2BF45E15C14EAD0052469C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C2BF46315C14EAD0052469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C2BF46415C14EAD0052469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2BF46615C14EAD0052469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timecard/Timecard-Prefix.pch";
+				INFOPLIST_FILE = "Timecard/Timecard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C2BF46715C14EAD0052469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Timecard/Timecard-Prefix.pch";
+				INFOPLIST_FILE = "Timecard/Timecard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C2BF44115C14EAD0052469C /* Build configuration list for PBXProject "Timecard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2BF46315C14EAD0052469C /* Debug */,
+				2C2BF46415C14EAD0052469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2BF46515C14EAD0052469C /* Build configuration list for PBXNativeTarget "Timecard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2BF46615C14EAD0052469C /* Debug */,
+				2C2BF46715C14EAD0052469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C2BF43E15C14EAD0052469C /* Project object */;
+}
