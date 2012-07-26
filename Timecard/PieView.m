@@ -190,10 +190,12 @@ void drawPattern(void* info, CGContextRef context);
 - (void)setRanges:(NSArray *)ranges {
 	[_ranges removeAllObjects];
 	[_ranges addObjectsFromArray:ranges];
+	[self setNeedsDisplay];
 }
 
 - (void)addRange:(NSValue *)range {
 	[_ranges addObject:range];
+	[self setNeedsDisplay];
 }
 
 #pragma mark - Pattern
