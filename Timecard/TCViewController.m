@@ -79,12 +79,14 @@
 		case TimecardStateWorking:
 			[self.stateChangeButton setTitle:@"終業" forState:UIControlStateNormal];
 			[self.alreadyStateChangedButton setTitle:@"終業してた" forState:UIControlStateNormal];
+			self.title = @"はたらいてる";
 			break;
 			
 		case TimecardStateResting:	
 		default:
 			[self.stateChangeButton setTitle:@"始業" forState:UIControlStateNormal];
 			[self.alreadyStateChangedButton setTitle:@"始業してた" forState:UIControlStateNormal];
+			self.title = @"やすんでる";
 			break;
 	}
 	
@@ -99,6 +101,10 @@
 		[controller setState:_currentState];
 		
 		[self changeState:self];
+	}
+	else if ([segue.identifier isEqualToString:@"toPieChartSegue"]) {
+		TCTimeManager *manager = [TCTimeManager defaultManager];
+		[manager endWorking];
 	}
 }
 
