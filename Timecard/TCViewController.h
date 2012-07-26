@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TCViewController : UIViewController
+#import "TCTimeSelectionViewController.h"
+
+@interface TCViewController : UIViewController {
+	TimecardState _currentState;
+}
+
+@property (nonatomic, retain) IBOutlet UIButton *finishButton;
+@property (nonatomic, retain) IBOutlet UIButton *stateChangeButton;
+@property (nonatomic, retain) IBOutlet UIButton *alreadyStateChangedButton;
+
+- (IBAction)finished:(id)sender;
+- (IBAction)changeState:(id)sender;
 
 @end
